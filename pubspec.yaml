@@ -1,13 +1,10 @@
-name: github_signin
-description: "Github Signin"
+name: github_signin_aksoyhlc
+description: "Log in simply and quickly with GitHub OAuth."
 version: 0.0.1
 homepage: https://github.com/Aksoyhlc/github_signin
 documentation: https://github.com/Aksoyhlc/github_signin
 issue_tracker: https://github.com/Aksoyhlc/github_signin/issues
 repository: https://github.com/Aksoyhlc/github_signin
-executables:
-    github_signin: github_signin
-
 
 
 

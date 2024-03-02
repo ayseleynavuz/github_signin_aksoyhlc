@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:github_signin/src/random_str.dart';
 
 import 'github.dart';
 import 'params_model.dart';
+import 'random_str.dart';
 import 'response_model.dart';
 
 class GithubSignIn extends StatefulWidget {
