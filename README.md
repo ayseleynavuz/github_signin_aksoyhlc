@@ -1,13 +1,9 @@
-
-
-
-
 ## Getting Started
 
 Add package dependency
 
 ```yaml  
-github_signin: any  
+github_signin_aksoyhlc: any  
 ```  
 
 ## Example
