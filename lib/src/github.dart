@@ -5,6 +5,8 @@ import 'package:http/http.dart' as http;
 import 'params_model.dart';
 import 'response_model.dart';
 
+/// Github authentication helper class.
+///
 class Github {
   Github._internal();
   static final Github _instance = Github._internal();
@@ -50,6 +52,7 @@ class Github {
     }
   }
 
+  /// Get the access token from the code.
   Future<String?> getAccesToken(String code) async {
     try {
       response = await http.post(
@@ -69,6 +72,7 @@ class Github {
     }
   }
 
+  /// Get the user data from the access token.
   Future<Map<String, dynamic>?> getUserData() async {
     try {
       response = await http.get(
@@ -85,10 +89,9 @@ class Github {
     }
   }
 
+  /// Get the email from the access token.
+  /// Github email scope is not required. If the user does not give permission to access the email, the email will not be returned.
   Future<String?> getEmail() async {
-    /**
-     * Github email scope is not required. If the user does not give permission to access the email, the email will not be returned.
-     */
     if (!params!.scopes.contains("email")) {
       return null;
     }

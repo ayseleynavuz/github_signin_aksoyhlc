@@ -13,6 +13,7 @@ class GithubParamsModel {
     required this.callbackUrl,
   });
 
+  /// Generate the url for the github sign in.
   String generateUrl() {
     return '${Github.signinUrl}?scope=$scopes&client_id=$clientId&redirect_uri=$callbackUrl&state=${Github().stateString}';
   }
