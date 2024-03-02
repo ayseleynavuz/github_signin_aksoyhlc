@@ -7,7 +7,7 @@
 Add package dependency
 
 ```yaml  
-github_signin: ^0.0.1  
+github_signin: any  
 ```  
 
 ## Example
