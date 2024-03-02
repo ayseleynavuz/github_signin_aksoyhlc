@@ -1,10 +1,10 @@
 name: github_signin_aksoyhlc
-description: "Log in simply and quickly with GitHub OAuth."
+description: "This package is made to make it easier for Flutter developers to add Github login/register to their applications. Official Github OAuth API used."
 version: 0.0.1
-homepage: https://github.com/Aksoyhlc/github_signin
-documentation: https://github.com/Aksoyhlc/github_signin
-issue_tracker: https://github.com/Aksoyhlc/github_signin/issues
-repository: https://github.com/Aksoyhlc/github_signin
+homepage: https://github.com/Aksoyhlc/github_signin_aksoyhlc
+documentation: https://github.com/Aksoyhlc/github_signin_aksoyhlc
+issue_tracker: https://github.com/Aksoyhlc/github_signin_aksoyhlc/issues
+repository: https://github.com/Aksoyhlc/github_signin_aksoyhlc
 
 
 

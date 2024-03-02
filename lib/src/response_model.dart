@@ -2,10 +2,14 @@ class GithubSignInResponse {
   final ResultStatus? status;
   final String? message;
   final String? name;
+
+  /// If user:email is used in Scope, it will be full.
   final String? email;
   final String? image;
   final String? id;
   final String? userName;
+
+  /// This field is used to store all the user data in json format.
   final String? allUserData;
 
   GithubSignInResponse({
