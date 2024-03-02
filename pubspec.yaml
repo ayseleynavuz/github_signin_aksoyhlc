@@ -1,13 +1,13 @@
 name: github_signin
 description: "Github Signin"
 version: 0.0.1
-homepage: https://aksoyhlc.net
+homepage: https://github.com/Aksoyhlc/github_signin
+documentation: https://github.com/Aksoyhlc/github_signin
+issue_tracker: https://github.com/Aksoyhlc/github_signin/issues
+repository: https://github.com/Aksoyhlc/github_signin
+executables:
+    github_signin: github_signin
 
-
-
-
-authors:
-  - Aksoyhlc <
 
 
 
