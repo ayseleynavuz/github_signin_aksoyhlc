@@ -6,7 +6,26 @@ Add package dependency
 github_signin_aksoyhlc: any  
 ```  
 
-## Example
+## Example 1
+```dart  
+	var params = GithubParamsModel(  
+		clientId: 'xxxxxx',  
+		clientSecret: 'yyyyyy',  
+		callbackUrl: 'http://example.com',  
+		scopes: 'read:user,user:email',  
+	);  
+	  
+	GithubSignInResponse result = await GithubSignIn.signIn(context, params: params);
+
+    	if (result.status != ResultStatus.success) {  
+		// handle error
+		print(result.message);
+	} else {
+		///TODO: use result  
+	}  
+```
+
+## Example 2
 ```dart  
 	var params = GithubParamsModel(  
 		clientId: 'xxxxxx',  
@@ -28,25 +47,6 @@ github_signin_aksoyhlc: any
 	}  
 	  
 	///TODO: use response data  
-```
-
-## Example 2
-```dart  
-	var params = GithubParamsModel(  
-		clientId: 'xxxxxx',  
-		clientSecret: 'yyyyyy',  
-		callbackUrl: 'http://example.com',  
-		scopes: 'read:user,user:email',  
-	);  
-	  
-	GithubSignInResponse result = await GithubSignIn.signIn(context, params: params);
-
-    	if (result.status != ResultStatus.success) {  
-		// handle error
-		print(result.message);
-	} else {
-		///TODO: use result  
-	}  
 ```
 
 

@@ -22,9 +22,17 @@ class GithubSignIn extends StatefulWidget {
   State<GithubSignIn> createState() => _GithubSignInState();
 
   // create a static method to hide the navigator.push
-  static Future<GithubSignInResponse> signIn(BuildContext context, {required GithubParamsModel params}) async {
-    dynamic result = await Navigator.push(context,
-        MaterialPageRoute(builder: (context) => GithubSignIn(params: params)));
+  static Future<GithubSignInResponse> signIn(BuildContext context,
+      {required GithubParamsModel params, PreferredSize? appBar}) async {
+    dynamic result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => GithubSignIn(
+          params: params,
+          appBar: appBar,
+        ),
+      ),
+    );
     if (result == null) {
       return GithubSignInResponse(
         status: ResultStatus.error,
