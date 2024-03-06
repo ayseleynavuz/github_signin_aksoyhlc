@@ -20,6 +20,20 @@ class GithubSignIn extends StatefulWidget {
 
   @override
   State<GithubSignIn> createState() => _GithubSignInState();
+
+  // create a static method to hide the navigator.push
+  static Future<GithubSignInResponse> signIn(BuildContext context, {required GithubParamsModel params}) async {
+    dynamic result = await Navigator.push(context,
+        MaterialPageRoute(builder: (context) => GithubSignIn(params: params)));
+    if (result == null) {
+      return GithubSignInResponse(
+        status: ResultStatus.error,
+        message: "User cancelled the sign in or error occurred",
+      );
+    } else {
+      return result as GithubSignInResponse;
+    }
+  }
 }
 
 class _GithubSignInState extends State<GithubSignIn> {
