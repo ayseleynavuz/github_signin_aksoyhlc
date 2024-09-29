@@ -17,13 +17,13 @@ dependencies:
     sdk: flutter
 
 
-  flutter_inappwebview: ^6.0.0
-  http: ^1.0.0
+  flutter_inappwebview:
+  http:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints:
 
 
 flutter:
